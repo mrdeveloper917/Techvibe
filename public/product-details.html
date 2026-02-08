@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Details | Techvibe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/product-details.css">
+</head>
+<body>
+
+  <div id="navbar"></div>
+
+  <section class="product-details">
+
+    <!-- IMAGE GALLERY -->
+    <div class="gallery">
+      <img id="mainImage" src="assets/images/banner.png" alt="Product Image">
+
+      <div class="thumbnails">
+        <img src="assets/images/banner.png" onclick="changeImage(this.src)">
+        <img src="assets/images/banner.png" onclick="changeImage(this.src)">
+        <img src="assets/images/banner.png" onclick="changeImage(this.src)">
+      </div>
+    </div>
+
+    <!-- PRODUCT INFO -->
+    <div class="details">
+      <h1 id="productName">Loading...</h1>
+
+      <p class="rating">
+        ⭐ <span id="productRating">0</span> / 5
+      </p>
+
+      <h2 class="price">₹<span id="productPrice">0</span></h2>
+
+      <div class="actions">
+        <button class="add-cart" onclick="addToCart()">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+
+      <h3>Highlights</h3>
+      <ul id="productSpecs">
+        <li>Loading specifications...</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- DESCRIPTION / REVIEWS -->
+  <section class="extra-info">
+    <h3>Product Description</h3>
+    <p id="productDesc">
+      High quality electronics product with best performance and reliability.
+    </p>
+  </section>
+
+  <div id="footer"></div>
+
+  <script src="js/product-details.js"></script>
+  <script src="js/navbar.js"></script>
+
+</body>
+</html>

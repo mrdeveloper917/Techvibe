@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Products | Techvibe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/footer.css">
+<link rel="stylesheet" href="css/products.css">
+
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
+
+    <!-- ================= TOP BAR ================= -->
+    <section class="top-bar">
+      <button class="filter-btn" onclick="openFilters()">☰ Filters</button>
+
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Search for products, brands and more"
+        onkeyup="searchProducts(this.value)"
+      />
+
+      <select onchange="sortProducts(this.value)">
+        <option value="">Sort By</option>
+        <option value="low">Price -- Low to High</option>
+        <option value="high">Price -- High to Low</option>
+        <option value="rating">Popularity</option>
+      </select>
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+    <section class="products-wrapper">
+      <div class="product-grid" id="productGrid">
+        <!-- PRODUCT CARD 1 -->
+        <div class="product-card">
+          <div class="image-box">
+            <span class="discount">20% OFF</span>
+            <span class="wishlist">❤</span>
+
+            <img src="assets/images/banner.png" alt="Gaming Laptop" />
+
+            <div class="hover-actions">
+              <a href="product-details.html?id=1">View Details</a>
+            </div>
+          </div>
+
+          <div class="product-info">
+            <span class="brand">HP</span>
+            <h3 class="title">Gaming Laptop</h3>
+            <div class="rating">⭐ 4.6</div>
+            <div class="price">₹65,999 <span>₹82,000</span></div>
+
+            <button class="cart-btn" onclick="addToCart()">ADD TO CART</button>
+          </div>
+        </div>
+
+        <!-- PRODUCT CARD 2 -->
+        <div class="product-card">
+          <div class="image-box">
+            <span class="discount">15% OFF</span>
+            <span class="wishlist">❤</span>
+
+            <img src="assets/images/banner.png" alt="Smartphone" />
+
+            <div class="hover-actions">
+              <a href="product-details.html?id=2">View Details</a>
+            </div>
+          </div>
+
+          <div class="product-info">
+            <span class="brand">Samsung</span>
+            <h3 class="title">Smartphone</h3>
+            <div class="rating">⭐ 4.4</div>
+            <div class="price">₹18,999 <span>₹22,000</span></div>
+
+            <button class="cart-btn" onclick="addToCart()">ADD TO CART</button>
+          </div>
+        </div>
+
+        <!-- PRODUCT CARD 3 -->
+        <div class="product-card">
+          <div class="image-box">
+            <span class="discount">30% OFF</span>
+            <span class="wishlist">❤</span>
+
+            <img src="assets/images/banner.png" alt="Headphones" />
+
+            <div class="hover-actions">
+              <a href="product-details.html?id=3">View Details</a>
+            </div>
+          </div>
+
+          <div class="product-info">
+            <span class="brand">Sony</span>
+            <h3 class="title">Wireless Headphones</h3>
+            <div class="rating">⭐ 4.2</div>
+            <div class="price">₹2,499 <span>₹3,500</span></div>
+
+            <button
+              class="cart-btn"
+              onclick="
+                addToCart({
+                  id: 1,
+                  name: 'Gaming Laptop',
+                  price: 65999,
+                })
+              "
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PAGINATION ================= -->
+    <div class="pagination" id="pagination">
+      <!-- JS se generate hoga -->
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <!-- JS -->
+    <script src="js/loadComponents.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/navbar.js"></script>
+  </body>
+</html>

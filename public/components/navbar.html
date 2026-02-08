@@ -1,0 +1,73 @@
+<nav class="navbar">
+  <div class="nav-container">
+
+    <!-- LOGO -->
+    <a href="index.html" class="nav-logo">
+      <img src="assets/images/logo.png" alt="Techvibe">
+      <div class="logo-text">
+        <span class="brand">Techvibe</span>
+        <span class="plus">Explore <b>Plus</b> ✨</span>
+      </div>
+    </a>
+
+    <!-- SEARCH -->
+    <div class="nav-search">
+      <input
+        type="text"
+        placeholder="Search for Products, Brands and More"
+        onkeyup="navSearch(this.value)"
+      >
+      <span class="search-icon">🔍</span>
+    </div>
+
+    <!-- RIGHT ACTIONS -->
+    <div class="nav-right">
+
+      <!-- LOGIN BUTTON -->
+      <a href="login.html" class="btn-nav login-btn">
+        👤 Login ▾
+      </a>
+
+      <!-- CART BUTTON -->
+      <a href="cart.html" class="btn-nav cart-btn-nav">
+        🛒 Cart <span id="cartCount">0</span>
+      </a>
+
+      <!-- SELLER BUTTON -->
+      <a href="#" class="btn-nav seller-btn">
+        🏪 Become a Seller
+      </a>
+
+      <!-- Product Button -->
+      <a href="products.html" class="btn-nav seller-btn">
+        Products
+      </a>
+
+      <!-- MORE DROPDOWN -->
+      <div class="more-wrapper">
+        <button class="more-btn">⋮</button>
+
+        <ul class="more-dropdown">
+          <li>
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/notificationPreferences-3439a8.svg">
+            Notification Preferences
+          </li>
+          <li>
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/helpcenter-f09fd8.svg">
+            24x7 Customer Care
+          </li>
+          <li>
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/advertise-88cb5a.svg">
+            Advertise
+          </li>
+          <li>
+            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/downloadApp-7569a8.svg">
+            Download App
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</nav>

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1770582513045,
+    "name": "Product Name: Gaming Laptop Pro X",
+    "price": 65999,
+    "category": "laptop",
+    "brand": "hp",
+    "rating": 4.5
+  },
+  {
+    "id": 1770582561946,
+    "name": "SmartPhone Max 5G",
+    "price": 18999,
+    "category": "mobile",
+    "brand": "samsung",
+    "rating": 4.5
+  },
+  {
+    "id": 1770582610175,
+    "name": "Wireless Headphones Bass+",
+    "price": 2499,
+    "category": "audio",
+    "brand": "sony",
+    "rating": 4.5
+  },
+  {
+    "id": 1770582651417,
+    "name": "DSLR Camera ProShot",
+    "price": 45999,
+    "category": "camera",
+    "brand": "canon",
+    "rating": 4.5
+  },
+  {
+    "id": 1770582689720,
+    "name": "SmartWatch Active",
+    "price": 3999,
+    "category": "wearable",
+    "brand": "boat",
+    "rating": 4.5
+  }
+]

@@ -1,0 +1,38 @@
+/* ===== FOOTER ===== */
+.footer {
+  background: #172337; /* Flipkart dark */
+  color: #ffffff;
+  padding: 50px 0 25px;
+  text-align: center;
+}
+
+.footer img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  margin-bottom: 25px;
+}
+
+.footer-links a {
+  margin: 0 12px;
+  font-size: 14px;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ffeb3b;
+}
+
+.footer span {
+  font-size: 13px;
+  color: #aaaaaa;
+}

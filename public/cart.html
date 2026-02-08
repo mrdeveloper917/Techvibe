@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cart | Techvibe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <div id="navbar"></div>
+
+  <!-- CART SECTION -->
+  <section class="cart-wrapper">
+
+    <div class="cart-header">
+      <h2>My Cart</h2>
+      <span class="secure">🔒 Secure Checkout</span>
+    </div>
+
+    <div class="cart-layout">
+
+      <!-- LEFT : CART ITEMS -->
+      <div class="cart-items" id="cartItems">
+        <!-- Items JS se aayenge -->
+      </div>
+
+      <!-- RIGHT : PRICE DETAILS -->
+      <div class="price-box">
+        <h3>PRICE DETAILS</h3>
+
+        <div class="price-row">
+          <span>Items (<span id="itemCount">0</span>)</span>
+          <span>₹<span id="totalPrice">0</span></span>
+        </div>
+
+        <div class="price-row">
+          <span>Delivery Charges</span>
+          <span class="free">FREE</span>
+        </div>
+
+        <hr>
+
+        <div class="price-row total">
+          <span>Total Amount</span>
+          <span>₹<span id="totalPriceFinal">0</span></span>
+        </div>
+
+        <button class="checkout-btn">
+          PLACE ORDER
+        </button>
+
+        <p class="save-text">🎉 You will save money on this order</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+  <!-- JS -->
+  <script src="js/loadComponents.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/navbar.js"></script>
+</body>
+</html>

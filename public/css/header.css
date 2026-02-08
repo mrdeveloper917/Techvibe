@@ -1,0 +1,26 @@
+/* ===== HEADER ===== */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  padding: 12px 0;
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.header-container img {
+  width: 42px;
+}
+
+.header-container h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2874f0; /* Flipkart blue */
+  letter-spacing: 0.5px;
+}

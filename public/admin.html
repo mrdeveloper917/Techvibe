@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel | Techvibe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <h2>Admin Panel – Add Product</h2>
+
+  <div class="admin-form">
+    <input id="name" type="text" placeholder="Product Name">
+    <input id="price" type="number" placeholder="Price">
+    <input id="category" type="text" placeholder="Category (mobile, laptop)">
+    <input id="brand" type="text" placeholder="Brand (hp, samsung)">
+    
+    <button onclick="addProduct()">Add Product</button>
+  </div>
+
+  <h3>Product List</h3>
+  <ul id="list"></ul>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
