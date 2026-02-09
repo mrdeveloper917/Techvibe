@@ -32,26 +32,28 @@ const CART_API = "http://localhost:5000/api/cart";
 
 async function addToCart(product) {
   try {
+    console.log("Sending to backend:", product); // debug
+
     const res = await fetch(CART_API, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(product)
+      body: JSON.stringify({
+        id: product.id,
+        name: product.name,
+        price: product.price,
+        qty: 1
+      })
     });
 
     if (!res.ok) {
       const err = await res.json();
       console.error("Cart error:", err);
-      alert("Failed to add product");
       return;
     }
 
-    alert("✅ Product added to cart");
-
-    if (typeof loadCartCount === "function") {
-      loadCartCount();
-    }
+    alert("Product added to cart");
 
   } catch (error) {
     console.error("Add to cart failed", error);

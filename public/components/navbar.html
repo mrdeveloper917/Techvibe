@@ -23,27 +23,49 @@
     <!-- RIGHT ACTIONS -->
     <div class="nav-right">
 
-      <!-- LOGIN BUTTON -->
-      <a href="login.html" class="btn-nav login-btn">
-        👤 Login ▾
-      </a>
+      <!-- 🔥 LOGIN DROPDOWN (NEW FEATURE) -->
+      <div class="login-wrapper">
 
-      <!-- CART BUTTON -->
+        <button class="btn-nav login-btn">
+          👤 Login
+          <img
+            class="login-arrow"
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMgMkw3IDZMMTEgMiIgc3Ryb2tlPSIjMTExMTEyIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPg=="
+          />
+        </button>
+
+        <!-- DROPDOWN CARD -->
+        <div class="login-dropdown">
+          <div class="login-top">
+            <span>New customer?</span>
+            <a href="signup.html">Sign Up</a>
+          </div>
+
+          <a href="#">👤 My Profile</a>
+          <a href="#">⭐ Plus Zone</a>
+          <a href="#">📦 Orders</a>
+          <a href="#">❤️ Wishlist</a>
+          <a href="#">🎁 Rewards</a>
+          <a href="#">💳 Gift Cards</a>
+        </div>
+      </div>
+
+      <!-- CART -->
       <a href="cart.html" class="btn-nav cart-btn-nav">
         🛒 Cart <span id="cartCount">0</span>
       </a>
 
-      <!-- SELLER BUTTON -->
+      <!-- SELLER -->
       <a href="#" class="btn-nav seller-btn">
         🏪 Become a Seller
       </a>
 
-      <!-- Product Button -->
+      <!-- PRODUCTS -->
       <a href="products.html" class="btn-nav seller-btn">
         Products
       </a>
 
-      <!-- MORE DROPDOWN -->
+      <!-- MORE -->
       <div class="more-wrapper">
         <button class="more-btn">⋮</button>
 
@@ -68,6 +90,5 @@
       </div>
 
     </div>
-
   </div>
 </nav>

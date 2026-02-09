@@ -4,5 +4,11 @@
     "name": "DSLR Camera ProShot",
     "price": 45999,
     "qty": 1
+  },
+  {
+    "id": 1770582561946,
+    "name": "SmartPhone Max 5G",
+    "price": 18999,
+    "qty": 1
   }
 ]
