@@ -23,40 +23,43 @@
     <!-- RIGHT ACTIONS -->
     <div class="nav-right">
 
-      <!-- 🔥 LOGIN DROPDOWN (NEW FEATURE) -->
+      <!-- LOGIN / USER -->
       <div class="login-wrapper">
 
-        <button class="btn-nav login-btn">
+        <!-- LOGIN BUTTON -->
+        <a href="login.html" class="btn-nav login-btn" id="loginBtn">
           👤 Login
-          <img
-            class="login-arrow"
-            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMgMkw3IDZMMTEgMiIgc3Ryb2tlPSIjMTExMTEyIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPg=="
-          />
-        </button>
+        </a>
 
-        <!-- DROPDOWN CARD -->
-        <div class="login-dropdown">
-          <div class="login-top">
-            <span>New customer?</span>
-            <a href="register.html">Sign Up</a>
-          </div>
-
-          <a href="#">👤 My Profile</a>
-          <a href="#">⭐ Plus Zone</a>
-          <a href="#">📦 Orders</a>
-          <a href="#">❤️ Wishlist</a>
-          <a href="#">🎁 Rewards</a>
-          <a href="#">💳 Gift Cards</a>
+        <!-- USER BUTTON -->
+        <div class="user-btn" id="userBtn">
+          <img src="https://i.imgur.com/6VBx3io.png" class="user-avatar">
+          <span id="navUserName">User</span>
+          <img class="login-arrow"
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSI+CjxwYXRoIGQ9Ik0zIDJMNyA2TDExIDIiIHN0cm9rZT0iIzExMTExMiIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KPC9zdmc+" />
         </div>
+
+        <!-- DROPDOWN -->
+        <div class="login-dropdown">
+          <a href="#" onclick="authGuard()">👤 My Profile</a>
+          <a href="#" onclick="authGuard()">⭐ Plus Zone</a>
+          <a href="#" onclick="authGuard()">📦 Orders</a>
+          <a href="#" onclick="authGuard()">❤️ Wishlist</a>
+          <a href="#" onclick="authGuard()">🎁 Rewards</a>
+          <a href="#" onclick="authGuard()">💳 Gift Cards</a>
+          <hr>
+          <a href="#" class="logout" onclick="logoutUser()">🚪 Logout</a>
+        </div>
+
       </div>
 
       <!-- CART -->
-      <a href="cart.html" class="btn-nav cart-btn-nav">
+      <a href="cart.html" class="btn-nav cart-btn-nav" onclick="return cartGuard()">
         🛒 Cart <span id="cartCount">0</span>
       </a>
 
       <!-- SELLER -->
-      <a href="#" class="btn-nav seller-btn">
+      <a href="#" class="btn-nav seller-btn" onclick="return authGuard()">
         🏪 Become a Seller
       </a>
 
@@ -68,24 +71,11 @@
       <!-- MORE -->
       <div class="more-wrapper">
         <button class="more-btn">⋮</button>
-
         <ul class="more-dropdown">
-          <li>
-            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/notificationPreferences-3439a8.svg">
-            Notification Preferences
-          </li>
-          <li>
-            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/helpcenter-f09fd8.svg">
-            24x7 Customer Care
-          </li>
-          <li>
-            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/advertise-88cb5a.svg">
-            Advertise
-          </li>
-          <li>
-            <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/downloadApp-7569a8.svg">
-            Download App
-          </li>
+          <li onclick="authGuard()">Notification Preferences</li>
+          <li onclick="authGuard()">24x7 Customer Care</li>
+          <li onclick="authGuard()">Advertise</li>
+          <li>Download App</li>
         </ul>
       </div>
 

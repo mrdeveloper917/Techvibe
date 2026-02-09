@@ -1,28 +1,47 @@
-const CART_COUNT_API = "http://localhost:5000/api/cart/count";
-
-/* LOAD CART COUNT */
-async function loadCartCount() {
+function getUser() {
   try {
-    const res = await fetch(CART_COUNT_API);
-    const data = await res.json();
-    document.getElementById("cartCount").innerText = data.count;
-  } catch (err) {
-    console.error("Failed to load cart count");
+    return JSON.parse(localStorage.getItem("user"));
+  } catch {
+    return null;
   }
 }
 
-/* SEARCH REDIRECT */
-function navSearch(value) {
-  if (value.length > 2) {
-    window.location.href = `products.html?search=${value}`;
+function loadNavbarUser() {
+  const loginBtn = document.getElementById("loginBtn");
+  const userBtn = document.getElementById("userBtn");
+  const userName = document.getElementById("navUserName");
+
+  if (!loginBtn || !userBtn) return;
+
+  const user = getUser();
+
+  if (user) {
+    loginBtn.style.display = "none";
+    userBtn.style.display = "flex";
+    if (userName) userName.innerText = user.name;
+  } else {
+    loginBtn.style.display = "inline-flex";
+    userBtn.style.display = "none";
   }
 }
 
-/* MOBILE MENU */
-function toggleMenu() {
-  const nav = document.getElementById("navLinks");
-  nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+/* 🔐 ACCESS GUARDS */
+function authGuard() {
+  if (!getUser()) {
+    window.location.href = "login.html";
+    return false;
+  }
+  return true;
 }
 
-/* INIT */
-loadCartCount();
+function cartGuard() {
+  return authGuard();
+}
+
+function logoutUser() {
+  localStorage.removeItem("user");
+  window.location.href = "index.html";
+}
+
+/* wait for navbar injection */
+setTimeout(loadNavbarUser, 200);
