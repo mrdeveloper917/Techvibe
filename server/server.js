@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const productRoutes = require("./routes/productRoutes");
 const cartRoutes = require("./routes/cartRoutes");
+const authRoutes = require("./routes/authRoutes"); 
 
 const app = express();
 
@@ -10,6 +11,7 @@ app.use(express.json());
 
 app.use("/api/products", productRoutes);
 app.use("/api/cart", cartRoutes);
+app.use("/api/auth", authRoutes);
 
 app.listen(5000, () => {
   console.log("🚀 Techvibe backend running on port 5000");
