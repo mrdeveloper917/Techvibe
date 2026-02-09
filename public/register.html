@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Signup | Techvibe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- GLOBAL + COMPONENT STYLES -->
+  <link rel="stylesheet" href="css/style.css" >
+  <link rel="stylesheet" href="css/navbar.css" >
+  <link rel="stylesheet" href="css/footer.css" >
+
+  <!-- AUTH PAGE STYLE -->
+  <link rel="stylesheet" href="css/auth.css" >
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div id="navbar"></div>
+
+  <!-- SIGNUP SECTION -->
+  <section class="auth-page">
+    <div class="auth-container">
+
+      <!-- LEFT -->
+      <div class="auth-left">
+        <h2>Looks like you're new here!</h2>
+        <p>Sign up with your details to get started</p>
+        <img src="assets/images/banner.png" alt="Signup">
+      </div>
+
+      <!-- RIGHT -->
+      <div class="auth-right">
+        <form id="signupForm">
+
+          <input type="text" placeholder="Full Name" required id="name">
+          <input type="email" placeholder="Email Address" required id="email">
+          <input type="password" placeholder="Password" required id="password">
+
+          <button type="submit" class="auth-btn">
+            CONTINUE
+          </button>
+
+          <p class="login-link">
+            Existing User? <a href="login.html">Log in</a>
+          </p>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+  <!-- JS -->
+  <script src="js/loadComponents.js"></script>
+  <script src="js/register.js"></script>
+
+</body>
+</html>

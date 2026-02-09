@@ -1,0 +1,133 @@
+/* ================= AUTH PAGE ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+.auth-page {
+  min-height: calc(100vh - 120px);
+  background: #f1f3f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+/* CONTAINER */
+.auth-container {
+  width: 820px;
+  max-width: 95%;
+  min-height: 480px;
+  display: flex;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* LEFT PANEL */
+.auth-left {
+  width: 45%;
+  background: #2874f0;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.auth-left h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.auth-left p {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.auth-left img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* RIGHT PANEL */
+.auth-right {
+  width: 55%;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.auth-right form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* INPUTS */
+.auth-right input {
+  padding: 12px 10px;
+  margin-bottom: 22px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.auth-right input:focus {
+  border-bottom-color: #2874f0;
+}
+
+/* BUTTON */
+.auth-btn {
+  background: #fb641b;
+  color: white;
+  padding: 12px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.auth-btn:hover {
+  background: #e85c16;
+  box-shadow: 0 6px 18px rgba(251,100,27,0.4);
+}
+
+/* LOGIN LINK */
+.login-link {
+  margin-top: 24px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-link a {
+  color: #2874f0;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+  }
+
+  .auth-left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .auth-right {
+    width: 100%;
+  }
+}

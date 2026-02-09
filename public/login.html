@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login | Techvibe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- GLOBAL + COMPONENT STYLES -->
+  <link rel="stylesheet" href="css/style.css" >
+  <link rel="stylesheet" href="css/navbar.css" >
+  <link rel="stylesheet" href="css/footer.css" >
+
+  <!-- AUTH STYLE -->
+  <link rel="stylesheet" href="css/auth.css" >
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div id="navbar"></div>
+
+  <!-- LOGIN SECTION -->
+  <section class="auth-page">
+    <div class="auth-container">
+
+      <!-- LEFT -->
+      <div class="auth-left">
+        <h2>Login</h2>
+        <p>Get access to your Orders, Wishlist and Recommendations</p>
+        <img src="assets/images/banner.png" alt="Login">
+      </div>
+
+      <!-- RIGHT -->
+      <div class="auth-right">
+        <form id="loginForm">
+
+          <input type="email" placeholder="Enter Email" required id="email">
+          <input type="password" placeholder="Enter Password" required id="password">
+
+          <button type="submit" class="auth-btn">
+            LOGIN
+          </button>
+
+          <p class="login-link">
+            New to Techvibe? <a href="register.html">Create an account</a>
+          </p>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+  <!-- JS -->
+  <script src="js/loadComponents.js"></script>
+  <script src="js/login.js"></script>
+
+</body>
+</html>
